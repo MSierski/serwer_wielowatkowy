@@ -54,13 +54,14 @@ public class EchoServerThread implements Runnable {
       try {
 
         String login = "Podaj swój login";
-        out.writeBytes(login + "\n\r");
+        out.writeBytes(login + "\n");
         out.flush();
         login = brinp.readLine();
+        System.out.println(login);
 
         if ("Admin".equals(login)) {
           String wtd = "Witaj w panelu administacyjnym. Co chcesz zrobić?";
-          out.writeBytes(wtd + '\n');
+          out.writeBytes(wtd + "\n\r");
           out.flush();
           brinp.readLine();
 
@@ -104,8 +105,9 @@ public class EchoServerThread implements Runnable {
 
                 users.add(user); */
 
-
+          System.out.println(accnum);
           int AccNumb = Integer.parseInt(accnum);
+
 
 
           if ("1".equals(tast)) {
@@ -164,11 +166,11 @@ public class EchoServerThread implements Runnable {
           } else if ("4".equals(tast)) {
 
             String przelew = "Ile pieniędzy przelać?";
-            out.writeBytes(przelew + '\n');
+            out.writeBytes(przelew + "\n\r");
             out.flush();
             przelew = brinp.readLine();
             String komu = "Ile pieniędzy przelać (nr.konta) ?";
-            out.writeBytes(komu + '\n');
+            out.writeBytes(komu + "\n\r");
             out.flush();
             komu = brinp.readLine();
 

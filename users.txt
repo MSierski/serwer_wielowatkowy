@@ -1,2 +1,2 @@
-Mateusz Sierski 590976 8888 2100.0 
-Jan Kowalski 291920023 7654 3008.6 
+Mateusz Sierski 590976 8888 1900.0 
+Jan Kowalski 291920023 7654 3108.6 
